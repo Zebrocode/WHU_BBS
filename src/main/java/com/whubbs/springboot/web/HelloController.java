@@ -13,9 +13,9 @@ import java.util.Date;
 @Controller//RestController 返回文字 Controller可以去找jsp
 public class HelloController {
     @RequestMapping("/")
-    public String Home() {
-
-        return "home.html";
+    public String Home(Model m) {
+//        m.addAttribute("name", "thymeleaf");
+        return "home";
     }
 
 }

@@ -1,6 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
     <TITLE>WHU_BBS登录页</TITLE>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <META NAME="Generator" CONTENT="EditPlus">
@@ -85,15 +85,13 @@
         }
 
     </style>
-
-</HEAD>
-
-<BODY>
+</head>
+<body>
 
 
 <div id="login">
     <h1>WHU BBS</h1>
-    <form method="post" action="/login">
+    <form method="POST" th:action="login" >
         <input type="text" required="required" placeholder="用户名" name="u"></input>
         <input type="password" required="required" placeholder="密码" name="p"></input>
         <button class="but" type="submit">登录</button>
@@ -1194,5 +1192,6 @@ void main(void) {
         w['r'+r] = w['r'+r] || w['webkitR'+r] || w['mozR'+r] || w['msR'+r] || w['oR'+r] || function(c){ w.setTimeout(c, 1000 / 60); };
     })(window, 'equestAnimationFrame');
 </script>
-</BODY>
-</HTML>
+</body>
+
+</html>
