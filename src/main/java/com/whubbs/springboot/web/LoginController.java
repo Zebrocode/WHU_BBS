@@ -1,5 +1,7 @@
 package com.whubbs.springboot.web;
 
+import com.whubbs.springboot.domain.User;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,6 +18,7 @@ public class LoginController {
         String account = request.getParameter("u");
         String password = request.getParameter("p");
         //验证数据库中是否有该账户密码组合;
+
         System.out.println("user:"+account+"\n"+"password:"+password);
         m.addAttribute("user",account);
         return "loginH";
