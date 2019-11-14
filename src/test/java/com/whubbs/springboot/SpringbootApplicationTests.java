@@ -1,33 +1,28 @@
 package com.whubbs.springboot;
 
-import com.whubbs.springboot.dao.BaseDao;
-import com.whubbs.springboot.dao.userDao;
-import com.whubbs.springboot.dao.userDaoImpl;
+import com.whubbs.springboot.dao.AccountDao;
 import com.whubbs.springboot.domain.User;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
 @SpringBootTest
+@RunWith(SpringRunner.class)
 class SpringbootApplicationTests {
-    @Test
-    void connectText(){
-        try {
-            Connection c = BaseDao.getConnection();
-        } catch (SQLException e) {
-            System.out.println("连接数据库失败!!!");
-            e.printStackTrace();
-        }
+
+    @Autowired
+    AccountDao accountDao;
 
 
-    }
+
     @Test
-    void contextLoads() {
-        userDao dao = new userDaoImpl();
-        User u = dao.getUser(7);
-        System.out.println(u);
+    void test() {
+        System.out.println(accountDao.findAll());
     }
 
 }
