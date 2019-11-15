@@ -1,4 +1,4 @@
-package com.whubbs.springboot.web;
+package com.whubbs.springboot.controller;
 
 import com.whubbs.springboot.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
