@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/twitter-bootstrap/3.0.1/js/bootstrap.min.js"></script>
+
+    <!--<script type="text/javascript" src="v3/jquery.htmlClean.js"></script>-->
+    <!--<script type="text/javascript" src="v3/scripts.min.js"></script>-->
+    <title>WHU_BBS论坛</title>
+</head>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h1>山水一程 三生有幸</h1>
+        </div>
+    </div>
+</div>
+
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">主页</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">学院</a>
+                        </li>
+                        <li>
+                            <a href="#">重点课程</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">选项<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">按课程号查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">按老师查询</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">帮助</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" />
+                        </div> <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">退出登录</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">${user.name}<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">用户信息</a>
+                                </li>
+                                <li>
+                                    <a href="#">安全设置</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的消息</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">与我有关</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="jumbotron">
+                <h1>
+                    你好,珞珈学子!
+                </h1>
+                <p>
+                    我们为你提供了一个课程交流论坛,已选课程的朋友可以在这里发帖讨论课程的相关内容,未选课程的朋友可以根据帖子的指导找到你心仪的课程,期待大家的广泛交流~
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-large" href="#">详细教程</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel-group" id="panel-707157">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-707157" href="#panel-element-33892">示例帖 #1</a>
+                    </div>
+                    <div id="panel-element-33892" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            示例帖简介
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-707157" href="#panel-element-662189">示例帖 #2</a>
+                    </div>
+                    <div id="panel-element-662189" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            示例帖简介
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+</body>
+</html>

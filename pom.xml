@@ -23,20 +23,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework.security.oauth</groupId>-->
-        <!--    <artifactId>spring-security-oauth2</artifactId>-->
-        <!--</dependency>-->
-
+        <!--freemarker和thymeleaf作用差不多，都是页面模板引擎，据说freemarker更强大-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -100,6 +98,8 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
         </dependency>
+
+
     </dependencies>
 
     <build>
