@@ -35,7 +35,7 @@ spring:
     expose-request-attributes: true
     expose-session-attributes: true
     request-context-attribute: request
-    suffix: .ftl
+    suffix: .html
 
 mybatis:
   type-aliases-package: com.whubbs.springboot.domain

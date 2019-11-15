@@ -1,5 +1,5 @@
 
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
 <head>
     <TITLE>WHU_BBS登录页</TITLE>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -91,9 +91,9 @@
 
 <div id="login">
     <h1>WHU BBS</h1>
-    <form method="POST" th:action="login" >
-        <input type="text" required="required" placeholder="用户名" name="u"></input>
-        <input type="password" required="required" placeholder="密码" name="p"></input>
+    <form method="POST" action="login" >
+        <input type="text" required="required" placeholder="用户名" name="name"></input>
+        <input type="password" required="required" placeholder="密码" name="password"></input>
         <button class="but" type="submit">登录</button>
     </form>
 </div>
